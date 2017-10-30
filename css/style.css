@@ -178,11 +178,11 @@ a:hover {
 /* GAME CONTAINER - LEFT COLUMN */
 /* ------------------------------------------------ */
 
-.left-tab-header {
+.left-tab-item {
     padding: 5px;
 }
 
-.left-tab-header p {
+.left-tab-item p {
     padding: 5px;
 }
 
