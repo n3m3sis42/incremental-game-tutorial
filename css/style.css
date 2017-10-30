@@ -1,0 +1,293 @@
+/* 
+
+button border color: #888
+
+*/
+
+
+/* ------------------------------------------------ */
+/* BASIC SETUP */
+/* ------------------------------------------------ */
+
+
+html, body {
+    height: 100%;
+    overflow-y: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+    font-family: 'Raleway', 'Times New Roman', serif;
+    font-size: 16px;
+    font-weight: 300;    
+}
+
+
+/* ------------------------------------------------ */
+/* REUSABLE COMPONENTS */
+/* ------------------------------------------------ */
+
+
+.column {
+    min-height: 100%;
+    height: 100%;
+
+    display: inline-block;
+    margin-top: 4px;
+}
+
+/* ----- LINKS ----- */
+a {
+	color: #000;
+}
+
+a:hover {
+	opacity: 0.6;
+}
+
+/* ----- BUTTONS ----- */
+.btn {
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-size: 16px;
+    font-weight: 300px;
+    border-radius: 3px;
+    border: 1px solid #888;
+    padding: 0;
+    width: 264px;
+    cursor: default;
+    text-align: center;
+    margin-bottom:10px;
+}
+
+.btn-content {
+    padding: 10px 0 10px 10px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    border-color: #777;
+    background: #F9F9F9;    
+}
+
+.btn.disabled {
+    border-color: #aaa;
+}
+
+.btn.disabled:hover {
+    cursor: inherit;
+    border-color: #aaa;
+    background: inherit;    
+}
+
+.btn.disabled div.btn-content {
+    cursor: default;
+}
+
+.btn a {
+    background-color: #EEE;
+    border-left: 1px solid #888;
+    padding: 10px 6px 10px 6px !important;
+    margin: -10px 0;
+    min-width: 20px;
+    text-decoration: none;
+}
+
+
+/* ------------------------------------------------ */
+/* GAME CONTAINER */
+/* ------------------------------------------------ */
+
+#game-container {
+    border: 0 none;
+    font: inherit;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+
+    overflow: auto;
+    width: 1300px;
+}
+
+/* ----- TITLE BAR ----- */
+#title-bar {
+    position:absolute;
+    top: 2px;
+    left: 0px;
+    height: 26px;
+    width: 100%;
+    border-bottom: 1px solid gray;
+
+    box-shadow: 1px 0px 2px #888;
+    min-width: 1180px;
+}
+
+.title-text {
+    padding-left: 10px;
+}
+
+.title-text span {
+    font-size: 80%;
+}
+
+/* ----- COLUMN LAYOUT ----- */
+#game {
+    position:absolute;
+    bottom: 0;
+    top: 26px;
+    width: 100%;
+    min-width: 1180px;
+    margin: 0 auto;
+    height: auto;
+    white-space: nowrap;	/* to prevent log column from wrapping */
+}
+
+#game * {
+    white-space: normal;
+}
+
+#left-column,
+#mid-column {
+    vertical-align: top;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#left-column {
+    width: 25%;
+    max-width: 400px;
+    min-width: 300px;
+    padding-right: 20px;
+}
+
+#mid-column {
+    width: 630px;
+    margin-top: 30px;
+}
+
+#right-column {
+    width: 250px;
+    padding-left: 8px;
+    top: 20px;
+    position: relative;
+}
+
+
+/* ------------------------------------------------ */
+/* GAME CONTAINER - LEFT COLUMN */
+/* ------------------------------------------------ */
+
+.left-tab-header {
+    padding: 5px;
+}
+
+.left-tab-header p {
+    padding: 5px;
+}
+
+/* ------------------------------------------------ */
+/* GAME CONTAINER - MIDDLE COLUMN */
+/* ------------------------------------------------ */
+
+
+#game-container-id {
+    border: 0px solid white !important;
+    padding: 0px;
+}
+
+/* ----- TAB LINKS ----- */
+.tabs-container {
+    padding-bottom: 15px;
+    position:absolute;
+    top: 5px;
+}
+
+.tab {
+    color: #000;
+}
+
+.active-tab {
+    text-decoration: none;
+}
+
+.tab a {
+    white-space: nowrap;
+}
+
+/* ----- ACTIVE TAB ----- */
+.tab-inner {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid gray;
+}
+
+.tab-data {
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid gray;
+}
+
+.tab-data-container {
+    padding-top: 15px;
+    border-top: 1px solid gray;
+    margin-top: 10px;
+}
+
+.tab-data-container table {
+    width: 100%;
+}
+
+.tab-data-container table td {
+    vertical-align: top;
+}
+
+.tab-data-container table td .btn {
+    position: relative; 
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+
+/* ------------------------------------------------ */
+/* GAME CONTAINER - RIGHT COLUMN */
+/* ------------------------------------------------ */
+
+
+.right-tab-header {
+    padding: 5px;
+}
+
+.right-tab-header p {
+    padding: 5px;
+}
+
+.console-intro {
+    padding-top: 10px; 
+    border-top: 1px solid gray;
+}
+
+/* ----- GAME LOG ----- */
+div#game-log {
+    overflow-y: auto !important;
+}
+
+#game-log {
+    overflow-y: scroll; 
+    padding-top: 10px; 
+    height: 100%; 
+    min-height:100%;
+}
+
+
+/* ------------------------------------------------ */
+/* FOOTER */
+/* ------------------------------------------------ */
+
+
+#footer-links {
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+}
