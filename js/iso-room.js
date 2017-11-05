@@ -37,9 +37,13 @@ function getScreamLogText() {
     case 2:
       return "Clear my throat and try again. Kinda hurts, but works okay this time. It echoes in the empty room and slowly fades away.";
     case 50:
-      return "Hear a voice say, 'No one's coming.' I crane my neck and look around, but no one's there."
+      return "Hear a voice say, 'No one's coming.' I crane my neck and look around, but no one's there.";
     case 75:
-      return "'You might as well give up now,' says that fucking voice. 'The iso rooms are soundproof anyway.'"
+      return "'You might as well give up now,' says the disembodied voice. 'The iso rooms are soundproof anyway.'";
+    case 100:
+      return "Gonna show that fucking voice.";
+    case 200:
+      return "My voice cracks. Keep screaming anyway.";
     default:
      return "";
   }
