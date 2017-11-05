@@ -3,6 +3,7 @@ var loc = "???"
 function setLocation(locName) {
   loc = locName;
   document.getElementById("location").innerHTML = loc;
+  document.querySelector('.active a').innerHTML = loc;
 }
 
 function writeToLog(text) {
