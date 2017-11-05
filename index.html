@@ -7,7 +7,7 @@
 
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,300i,400" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Lato:100,200,300,300i,400" rel="stylesheet">        
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,200,300,300i,400" rel="stylesheet">
 
         <title>Home - An incremental adventure by n3m3sis42</title>
 
@@ -29,6 +29,10 @@
   				<div id="left-column" class="column">
                     <div class="left-tab-item">
                         <p>Screams: <span id="screams">0</span></p>
+                        <p>Scream Volume: <span id="volume">0</span> dB</p>
+                    </div>
+                    <div class="left-tab-item">
+                        <p>Bond Integrity: <span id="bond-integrity">100</span>%</p>
                     </div>
   				</div>
 
@@ -36,7 +40,7 @@
   				<div id="mid-column" class="column">
   					<div id="game-container-id">
                         <div class="tabs-container">
-                            <a href="#" class="tab active-tab">Active Tab</a><span> | </span><a href="#" class="tab">Other Tab 1</a><span> | </span><a href="#" class="tab">Other Tab 2</a><span> | </span><a href="#" class="tab">Other Tab 3</a><span> | </span><a href="#" class="tab" >Other Tab 4</a><span> | </span><a href="#" class="tab">Other Tab 5</a><span> | </span><a href="#" class="tab">Other Tab 6</a><span> | </span><a href="#" class="tab">Other Tab 7</a>
+                            <a href="#" class="tab active-tab">Active Tab</a><span> | </span><a href="#" class="tab">Other Tab 1</a><span> | </span><a href="#" class="tab">Other Tab 2</a><span> | </span><a href="#" class="tab">Other Tab 3</a><span> | </span><a href="#" class="tab">Other Tab 4</a><span> | </span><a href="#" class="tab">Other Tab 5</a><span> | </span><a href="#" class="tab">Other Tab 6</a><span> | </span><a href="#" class="tab">Other Tab 7</a>
                         </div>
                         <div class="tab-inner">
                             <div class="tab-data">
@@ -45,28 +49,27 @@
                                         <tr>
                                             <td>
                                                 <div class="btn" onClick="screamClick(1)">
-                                                    <div class="btn-content" title="">
+                                                    <div class="btn-content">
                                                         <span>Scream</span>
                                                     </div>
                                                 </div>
                                                 <div class="btn">
-                                                    <div class="btn-content" title="">
+                                                    <div class="btn-content">
                                                         <span>Struggle</span>
-                                                    </div>
-                                                </div>
-                                                <div class="btn">
-                                                    <div class="btn-content" title="">
-                                                        <span>Pick Lock</span>
-                                                    </div>
-                                                </div>
-                                                <div class="btn">
-                                                    <div class="btn-content" title="">
-                                                        <span>Talk</span>
                                                     </div>
                                                 </div>
                                             </td>
                                             <td>
-                                                More buttons eventually go here.
+                                              <div class="btn disabled">
+                                                  <div class="btn-content">
+                                                      <span>Pick Lock</span>
+                                                  </div>
+                                              </div>
+                                              <div class="btn disabled">
+                                                  <div class="btn-content">
+                                                      <span>Talk</span>
+                                                  </div>
+                                              </div>
                                             </td>
                                         </tr>
                                     </table>
@@ -78,12 +81,13 @@
   				<!-- RIGHT -->
   				<div id="right-column" class="column">
                     <div class="right-tab-header">
-                        <p>Date and time or other log header goes here.</p>
+                        <p>Day: 1</p>
+                        <p>Location: ???</p>
                     </div>
   					<div class="right-tab">
   						<div>
   							<div class="console-intro">
-  								Wake up to walls so white they hurt my eyes. Strapped down, cold steel beneath me. Can't move my arms or legs. 
+  								Wake up to walls so white they hurt my eyes. Strapped down, cold steel beneath me. Can't move my arms or legs.
   							</div>
   						</div>
   						<div id="game-log">
@@ -95,10 +99,11 @@
         <div id="footer-links" class="links-block">
           <a href="#" target="_blank">twitter</a> |
           <a href="#" target="_blank">github</a> |
-          <a href="#" target="_blank">personal site</a> 
+          <a href="#" target="_blank">personal site</a>
         </div>
       </div>
 
+      <script src="js/utils.js"></script>
       <script src="js/index.js"></script>
 
     </body>

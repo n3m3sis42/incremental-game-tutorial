@@ -1,4 +1,4 @@
-/* 
+/*
 
 button border color: #888
 
@@ -21,7 +21,7 @@ body {
     background-color: #FFFFFF;
     font-family: 'Raleway', 'Times New Roman', serif;
     font-size: 16px;
-    font-weight: 300;    
+    font-weight: 300;
 }
 
 
@@ -68,21 +68,11 @@ a:hover {
 .btn:hover {
     cursor: pointer;
     border-color: #777;
-    background: #F9F9F9;    
+    background: #F9F9F9;
 }
 
 .btn.disabled {
-    border-color: #aaa;
-}
-
-.btn.disabled:hover {
-    cursor: inherit;
-    border-color: #aaa;
-    background: inherit;    
-}
-
-.btn.disabled div.btn-content {
-    cursor: default;
+    visibility: hidden;
 }
 
 .btn a {
@@ -159,6 +149,7 @@ a:hover {
     max-width: 400px;
     min-width: 300px;
     padding-right: 20px;
+    margin-top: 20px;
 }
 
 #mid-column {
@@ -180,10 +171,12 @@ a:hover {
 
 .left-tab-item {
     padding: 5px;
+    border: 1px solid #888;
+    margin: 10px 5px;
 }
 
 .left-tab-item p {
-    padding: 5px;
+    padding: 0;
 }
 
 /* ------------------------------------------------ */
@@ -243,9 +236,9 @@ a:hover {
 }
 
 .tab-data-container table td .btn {
-    position: relative; 
-    display: block; 
-    margin-left: auto; 
+    position: relative;
+    display: block;
+    margin-left: auto;
     margin-right: auto;
 }
 
@@ -260,11 +253,11 @@ a:hover {
 }
 
 .right-tab-header p {
-    padding: 5px;
+    padding: 0;
 }
 
 .console-intro {
-    padding: 10px 0; 
+    padding: 10px 0;
     border-top: 1px solid gray;
     border-bottom: 1px solid gray;
 }
@@ -275,9 +268,9 @@ div#game-log {
 }
 
 #game-log {
-    overflow-y: scroll; 
-    padding-top: 10px; 
-    height: 100%; 
+    overflow-y: scroll;
+    padding-top: 10px;
+    height: 100%;
     min-height:100%;
 }
 
