@@ -148,13 +148,13 @@ a:hover {
 }
 
 #mid-column {
-    width: 630px;
+    width: 45%;
     margin-top: 30px;
 }
 
 #right-column {
-    width: 350px;
-    padding-left: 8px;
+    width: 25%;
+    padding-left: 20px;
     top: 0px;
     position: relative;
 }
@@ -251,7 +251,7 @@ a:hover {
 
 .right-tab-header {
     padding: 5px;
-    margin: 0;
+    margin: 5px 0;
 }
 
 .right-tab-header p {
@@ -272,7 +272,6 @@ div#game-log {
 
 #game-log {
     overflow-y: scroll;
-    padding-top: 10px;
     height: 100%;
     min-height:100%;
 }

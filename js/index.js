@@ -4,14 +4,12 @@ function setLocation() {
 
 }
 
-function logEntry(text) {
-  return (
-    `<div class="right-tab-item">
-      ${text}
-    </div>`
-  )
-}
-
 function writeToLog(text) {
-    // document.getElementById("game-log").innerHTML
+    if (text === "") return;
+    
+    const logs = document.getElementById("game-log");
+    const logEntry = document.createElement("div");
+    logEntry.innerHTML = `<p>${text}</p>`;
+
+    logs.insertBefore(logEntry, logs.firstChild);
 }
