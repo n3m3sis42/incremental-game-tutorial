@@ -18,7 +18,7 @@
 
   			<div id="title-bar">
   				<div class="title-text">
-  					Home <span>an incremental adventure by <a href="#" target="_blank">n3m3sis42</a></span>
+  					<strong>Home</strong> <span>an incremental adventure by <a href="#" target="_blank">n3m3sis42</a></span>
 
   				</div>
   			</div>
@@ -40,7 +40,30 @@
   				<div id="mid-column" class="column">
   					<div id="game-container-id">
                         <div class="tabs-container">
-                            <a href="#" class="tab active-tab">Active Tab</a><span> | </span><a href="#" class="tab">Other Tab 1</a><span> | </span><a href="#" class="tab">Other Tab 2</a><span> | </span><a href="#" class="tab">Other Tab 3</a><span> | </span><a href="#" class="tab">Other Tab 4</a><span> | </span><a href="#" class="tab">Other Tab 5</a><span> | </span><a href="#" class="tab">Other Tab 6</a><span> | </span><a href="#" class="tab">Other Tab 7</a>
+                          <div class="tab active unlocked">
+                            <a href="#">Active Tab</a><span> | </span>
+                          </div>
+                          <div class="tab">
+                            <a href="#">Other Tab 1</a><span> | </span>
+                          </div>
+                          <div class="tab">
+                            <a href="#">Other Tab 2</a><span> | </span>
+                          </div>
+                          <div class="tab">
+                            <a href="#">Other Tab 3</a><span> | </span>
+                          </div>
+                          <div class="tab">
+                            <a href="#">Other Tab 4</a><span> | </span>
+                          </div>
+                          <div class="tab">
+                            <a href="#">Other Tab 5</a><span> | </span>
+                          </div>
+                          <div class="tab">
+                            <a href="#">Other Tab 6</a><span> | </span>
+                          </div>
+                          <div class="tab">
+                            <a href="#">Other Tab 7</a>
+                          </div>
                         </div>
                         <div class="tab-inner">
                             <div class="tab-data">
@@ -81,8 +104,12 @@
   				<!-- RIGHT -->
   				<div id="right-column" class="column">
                     <div class="right-tab-header">
-                        <p>Day: 1</p>
-                        <p>Location: ???</p>
+                        <p>
+                          Day: <span id="day">1</span>
+                        </p>
+                        <p>
+                          Location: <span id="location">???</span>
+                        </p>
                     </div>
   					<div class="right-tab">
   						<div>
@@ -91,7 +118,9 @@
   							</div>
   						</div>
   						<div id="game-log">
-  							Log text goes here.
+                <div class="right-tab-item">
+                  Log text goes here.
+                </div>
   						</div>
   					</div>
   				</div>
@@ -104,6 +133,7 @@
       </div>
 
       <script src="js/utils.js"></script>
+      <script src="js/iso-room.js"></script>
       <script src="js/index.js"></script>
 
     </body>
