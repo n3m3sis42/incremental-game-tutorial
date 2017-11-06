@@ -16,3 +16,7 @@ function writeToLog(text) {
 
     logs.insertBefore(logEntry, logs.firstChild);
 }
+
+window.setInterval(function(){
+  if (screamCursor > 0) screamClick(screamCursor);
+}, 1000);
