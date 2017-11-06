@@ -6,6 +6,10 @@ function setLocation(locName) {
   document.querySelector('.active a').innerHTML = loc;
 }
 
+function getLogText(action, number) {
+  return logText[action][number] || "";
+}
+
 function writeToLog(text) {
     if (text === "") return;
 
@@ -16,6 +20,12 @@ function writeToLog(text) {
     logs.insertBefore(logEntry, logs.firstChild);
 }
 
+function disable(elementId) {
+      document.getElementById(elementId).classList.add('disabled');
+}
+
 window.setInterval(function(){
-  if (screamCursor > 0) screamClick(screamCursor);
+  if (screamCursor > 0 && screams < 1000) screamClick(screamCursor);
+  if (screams >= 1000) disable("scream-btn");
+
 }, 1000);
