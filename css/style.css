@@ -253,6 +253,9 @@ a:hover {
 /* GAME CONTAINER - RIGHT COLUMN */
 /* ------------------------------------------------ */
 
+/*.right-tab {
+  height: 90%;
+}*/
 
 .right-tab-header {
     padding: 5px;
@@ -271,9 +274,9 @@ a:hover {
 }
 
 /* ----- GAME LOG ----- */
-div#game-log {
+/*div#game-log {
     overflow-y: auto !important;
-}
+}*/
 
 #game-log {
     overflow-y: scroll;

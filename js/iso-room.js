@@ -55,10 +55,7 @@ function screamClick(number) {
       // attemptsToMove = 49;
       // struggleClick(1);
     }
-    //
-    // if (screams === 500) {
-    //   document.getElementById('scream-btn').classList.add('disabled');
-    // }
+
 };
 
 function getStruggleLogText() {
