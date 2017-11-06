@@ -1,10 +1,4 @@
-var screams = 0;
-var screamCursor = 0;
-var volume = 30;
 
-var attemptsToMove = 0;
-var struggleCursor = 0;
-var bondIntegrity = 100;
 
 // TODO fix this so volume drops to 0 in between button clicks
 
@@ -84,6 +78,10 @@ function screamClick(number) {
       // writeToLog("Must've squirmed ");
       // attemptsToMove = 49;
       // struggleClick(1);
+    }
+
+    if (screams === 500) {
+      document.getElementById('scream-btn').classList.add('disabled');
     }
 };
 

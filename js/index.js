@@ -1,5 +1,4 @@
-var loc = "";
-document.body.onload = setLocation(loc = "???");
+document.body.onload = setLocation(loc);
 
 function setLocation(locName) {
   loc = locName;

@@ -72,7 +72,7 @@
                                     <table cellpadding="0" cellspacing="0">
                                         <tr>
                                             <td>
-                                                <div class="btn" onClick="screamClick(1)">
+                                                <div class="btn disabled" id="scream-btn" onClick="screamClick(1)">
                                                     <div class="btn-content">
                                                         <span>Scream</span>
                                                     </div>
@@ -84,12 +84,12 @@
                                                 </div>
                                             </td>
                                             <td>
-                                              <div class="btn disabled">
+                                              <div class="btn hidden">
                                                   <div class="btn-content">
                                                       <span>Pick Lock</span>
                                                   </div>
                                               </div>
-                                              <div class="btn disabled">
+                                              <div class="btn hidden">
                                                   <div class="btn-content">
                                                       <span>Talk</span>
                                                   </div>
@@ -130,6 +130,7 @@
         </div>
       </div>
 
+      <script src="js/globals.js"></script>
       <script src="js/utils.js"></script>
       <script src="js/iso-room.js"></script>
       <script src="js/index.js"></script>
