@@ -25,7 +25,10 @@ function disable(elementId) {
 }
 
 window.setInterval(function(){
-  if (screamCursor > 0 && screams < 1000) screamClick(screamCursor);
-  if (screams >= 1000) disable("scream-btn");
-
+  if (screamCursor > 0 && screams < 1000) {
+    screamClick(screamCursor);
+  }
+  if (screams >= 1000) {
+    disable("scream-btn");
+  }
 }, 1000);

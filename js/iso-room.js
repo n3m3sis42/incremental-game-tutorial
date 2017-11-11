@@ -9,6 +9,9 @@
 // Scream volume range peaks at 200 screams
 // After that, you start losing your voice and struggling automatically
 
+// Since screams are needed to get the full story, we probably need to disable the Struggle button if not enough screams have happened yet
+// I think first 0-5 struggles do nothing and then button is disabled until there are enough screams? Idk
+
 function getScreamVolume() {
   switch (true) {
     case screams === 0:
@@ -58,16 +61,15 @@ function screamClick(number) {
 
 };
 
-function getStruggleLogText() {
-
-}
-
 function getBondIntegrity() {
 
 }
 
 function struggleClick(number) {
   // NOTE if you've screamed enough to start losing your voice, you have to struggle less to loosen your bonds
+  const text = getLogText("struggle", 0);
+
   attemptsToMove += number;
   document.getElementById("attempts-to-move").innerHTML = attemptsToMove;
+  writeToLog(text);
 };
