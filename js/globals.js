@@ -117,7 +117,7 @@ var logEvents = [
     text: "Can't really scream, can't even do much more than squeak now half the time. Can't stop myself from trying all the same.",
     uses: 1,
     trigger: () => { return screams === 500 }
-  }
+  },
   /* ----- ISO ROOM - STRUGGLE-TRIGGERED ----- */
   {
     text: "Try to move, but nothing happens.",
